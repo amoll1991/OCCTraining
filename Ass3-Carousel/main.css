@@ -1,0 +1,46 @@
+#slider{
+    width: 90%;
+    height:400px;
+    margin:50px auto;
+    box-shadow: 0px 0px 10px 3px grey;
+    position: relative;
+}
+
+
+div#slider { 
+    overflow: hidden; 
+    border: 5px solid grey;
+ }
+
+div#slider figure img { 
+    width: 20%; 
+    height:100%;  
+    float: left; 
+    object-fit:cover;
+}
+div#slider figure { 
+	position: relative;
+    width:500%;
+    margin: 0;
+    left: 0;
+    transition: 1s ease-in-out;
+    object-fit: cover;
+}
+
+.btn-next, .btn-prev{
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  color: white;
+  background: black;
+  padding: 5px;
+  font-size: 50px;
+  border:none;
+}
+
+.btn-prev{
+  left: 0px;
+}
+.btn-next{
+  right: 0px;
+}

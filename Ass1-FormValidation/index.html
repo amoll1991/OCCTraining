@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <h2>Student Form</h2>
+    </div>
+
+    <form class="form" id="form">
+      <div class="form-control">
+        <label>First Name</label>
+        <input type="text" id="firstname">
+        <small id="fname_err">*Please enter first name*</small>
+      </div>
+
+      <div class="form-control">
+        <label>Last Name</label>
+        <input type="text" id="lastname">
+        <small id="lname_err">*Please enter last name*</small>
+      </div>
+
+      <div class="form-control">
+        <label>Email</label>
+        <input type="text" id="email">
+        <small id="email_err">*Please enter Email*</small>
+      </div>
+
+      <div class="form-control">
+        <label>Gender</label>
+        <select id="gender" name="gender">
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+        <small id="gender_err">*Please select Gender*</small>
+      </div>
+
+
+      <label>Courses</label><br>
+      <input type="checkbox" name="course" value="course 1">
+      <label for="course1">Course 1</label>
+      <input type="checkbox" name="course" value="course 2">
+      <label for="course2">Course 2</label>
+
+      <small id="course_err">*Please select courses*</small>
+
+
+
+
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

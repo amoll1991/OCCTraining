@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js" type = "text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout-validation/2.0.4/knockout.validation.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h2>Student Form</h2>
+    </div>
+
+    <form class="form" id="form" data-bind="submit:Submit">
+      <div class="form-control">
+        <label>First Name</label>
+        <input type="text" id="firstname" data-bind="value:firstName">
+      </div>
+
+      <div class="form-control">
+        <label>Last Name</label>
+        <input type="text" id="lastname" data-bind="value:lastName">
+      </div>
+
+      <div class="form-control">
+        <label>Email</label>
+        <input type="text" id="email" data-bind="value:email">
+      </div>
+
+      <div class="form-control">
+        <label>Gender</label>
+        <select id="gender" name="gender" data-bind="options:genderList,optionsCaption:'Choose...',value:gender"></select>
+      </div>
+
+      <label>Courses</label><br>
+      <label for="course1">Course 1</label>
+      <input type="checkbox" name="course" value="course 1" data-bind="checked:course"><br/>
+      <label for="course2">Course 2</label>
+      <input type="checkbox" name="course" value="course 2" data-bind="checked:course">
+     
+      <input type="submit" value="Submit" id="submit">
+
+      </form>
+      </div>
+      <script src="main.js"></script>
+</body>
+</html>
