@@ -1,3 +1,14 @@
+ko.validation.init({  
+  
+    registerExtenders: true,  
+    messagesOnModified: true,  
+    insertMessages: true,  
+    parseInputAttributes: true,  
+    errorClass: 'errorStyle',  
+    messageTemplate: null  
+
+}, true);  
+
 var StudentViewModel=function()
 {
     var self=this;
